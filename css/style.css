@@ -1,4 +1,131 @@
-*{
-    box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
     outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  :root {
+    --text-color-dark: #335368;
+    --text-color-light: #efefef;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  blockquote {
+    quotes: none;
+  }
+  blockquote:before,
+  blockquote:after {
+    content: "";
+    content: none;
+  }
+  del {
+    text-decoration: line-through;
+  }
+  header,
+  section,
+  article,
+  aside,
+  nav,
+  footer,
+  address {
+    display: block;
+  }
+  
+  input,
+  textarea,
+  select {
+    font-family: sans-serif;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1450px;
+  }
+
+/* css styles starts here */
+
+#home { 
+
 }
+
+#home .spotlight { 
+
+}
+
+#home .spotlight h1 { 
+
+}
+
+#home .spotlight .goat-img { 
+
+}
+
+#home .spotlight .goat-img .player { 
+
+}
+
+#home .spotlight .goat-img .player .name { 
+
+}
+
+#home .spotlight .goat-img .player .logo { 
+
+}
+
+#home .spotlight .goat-img .player .logo .club-logo { 
+
+}
+
+#home .spotlight .goat-img .player .logo .club-logo .img-class { 
+
+}
+
+#home .spotlight .goat-img .player .logo .club-name { 
+
+}
+
+#home .spotlight .goat-img .img-class { 
+
+}
+
+#home .nav-ball { 
+
+}
+
+#home .nav-ball .ball { 
+
+}
+
+#home .nav-ball .ball .img-class { 
+
+}
+
+#home .nav-ball ul { 
+
+}
+
+#home .nav-ball ul li { 
+
+}
+
+/* css ends here */
