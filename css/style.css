@@ -1,70 +1,163 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    background: transparent;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: none;
-    outline: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: sans-serif;
-  }
-  :root {
-    --text-color-dark: #335368;
-    --text-color-light: #efefef;
-  }
-  ol,
-  ul {
-    list-style: none;
-  }
-  blockquote {
-    quotes: none;
-  }
-  blockquote:before,
-  blockquote:after {
-    content: "";
-    content: none;
-  }
-  del {
-    text-decoration: line-through;
-  }
-  header,
-  section,
-  article,
-  aside,
-  nav,
-  footer,
-  address {
-    display: block;
-  }
-  
-  input,
-  textarea,
-  select {
-    font-family: sans-serif;
-  }
-  .img-class {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-  }
-  a {
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .wrapper {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1450px;
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --text-color-dark: #335368;
+  --text-color-light: #efefef;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+del {
+  text-decoration: line-through;
+}
+header,
+section,
+article,
+aside,
+nav,
+footer,
+address {
+  display: block;
+}
+
+input,
+textarea,
+select {
+  font-family: sans-serif;
+}
+.img-class {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1450px;
+}
 
 /* css styles starts here */
 
+#home {
+  background: url("../assets/images/2017-squad.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+#home .overlay {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    176deg,
+    rgba(0, 0, 0, 0) 5%,
+    rgba(0, 0, 0, 1) 90%
+  );
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
 
+#home .wrapper {
+  /* height: 100vh; */
+  position: relative;
+  z-index: 2;
+}
+
+#home .wrapper .main-title {
+  font-size: 100px;
+  color: #f7f7f7;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15%;
+}
+
+#home .wrapper .title-author {
+  font-size: 40px;
+  color: #f7f7f7;
+  font-weight: 500;
+  text-align: right;
+  font-style: italic;
+
+}
+
+#home  nav {
+  width: 100%;
+  padding: 3% 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+}
+
+#home nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#home nav ul li {
+  font-size: 20px;
+  color: #f7f7f7;
+  font-weight: 400;
+  margin-right: 20px;
+  position: relative;
+}
+#home nav ul li:last-child{
+  margin-right: 0;
+}
+#home nav ul li::after{
+  content: "";
+  display: block;
+  width: 5px;
+  height: 1px;
+  background-color: #f7f7f7;
+  border-radius: 50px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%,-50%);
+  transition: all .2s ease-in;
+}
+#home nav ul li:hover::after {
+  width: 100%;
+  background-color: #ffe79a;
+}
 
 /* css ends here */
