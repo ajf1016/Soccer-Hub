@@ -73,6 +73,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
 }
 
 #home .overlay {
@@ -137,6 +138,7 @@ a {
   font-weight: 400;
   margin-right: 20px;
   position: relative;
+  cursor: pointer;
 }
 #home nav ul li:last-child{
   margin-right: 0;
@@ -158,6 +160,37 @@ a {
 #home nav ul li:hover::after {
   width: 100%;
   background-color: #ffe79a;
+}
+
+#goats { 
+  background: url("../assets/images/");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+#goats .overlay { 
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    176deg,
+    rgba(0, 0, 0, 0) 5%,
+    rgba(0, 0, 0, 1) 90%
+  );
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#goats .overlay .who-are-they { 
+
 }
 
 /* css ends here */
