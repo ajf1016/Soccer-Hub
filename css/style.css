@@ -185,7 +185,55 @@ a {
   z-index: 1;
 }
 
-#goats .overlay .who-are-they { 
+#goats .overlay .main-title { 
+
+}
+
+#goats .overlay .card-container { 
+
+}
+
+#goats .overlay .card-container .card { 
+
+}
+
+#goats .overlay .card-container .card .player-image { 
+
+}
+
+#goats .overlay .card-container .card .player-image .img-class { 
+
+}
+
+#goats .overlay .card-container .card .player-name { 
+
+}
+
+#goats .overlay .card-container .card .country-box { 
+
+}
+
+#goats .overlay .card-container .card .country-box .country-logo { 
+
+}
+
+#goats .overlay .card-container .card .country-box .country-logo .img-class { 
+
+}
+
+#goats .overlay .card-container .card .country-box .country { 
+
+}
+
+#goats .overlay .card-container .card .stats { 
+
+}
+
+#goats .overlay .card-container .card .stats li { 
+
+}
+
+#goats .overlay .card-container .card .stats li .rating-title { 
 
 }
 
