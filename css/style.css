@@ -163,7 +163,7 @@ a {
 }
 
 #goats { 
-  background: url("../assets/images/");
+  background: url("../assets/images/10-7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -175,12 +175,8 @@ a {
 }
 
 #goats .overlay { 
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    176deg,
-    rgba(0, 0, 0, 0) 5%,
-    rgba(0, 0, 0, 1) 90%
-  );
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2763699229691877) 39%);
   height: 100vh;
   position: absolute;
   width: 100%;
