@@ -229,6 +229,9 @@ a {
   width: 25%;
   margin-right: 5%;
 }
+#goats .overlay .card-container .card-image:last-child{
+  margin-right: 0;
+}
 
 #goats .overlay .card-container .card { 
   width: 25%;
