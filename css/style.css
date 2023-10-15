@@ -114,6 +114,7 @@ a {
   font-weight: 600;
   text-align: center;
   margin-top: 15%;
+  
 }
 
 #home .wrapper .title-author {
@@ -132,6 +133,13 @@ a {
   left: 0;
   z-index: 2;
 
+}
+.header.sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
 }
 
 #home nav ul {
