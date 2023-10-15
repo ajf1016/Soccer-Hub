@@ -5,6 +5,10 @@
   --dark : #393053;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -118,7 +122,6 @@ a {
   font-weight: 500;
   text-align: right;
   font-style: italic;
-
 }
 
 #home  nav {
@@ -146,6 +149,11 @@ a {
   margin-right: 20px;
   position: relative;
   cursor: pointer;
+}
+#home nav ul li a{
+  font-size: 20px;
+  color: #FFD700;
+  font-weight: 400;
 }
 #home nav ul li:last-child{
   margin-right: 0;
