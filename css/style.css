@@ -1,3 +1,8 @@
+:root {
+  --light-cream: #F8EDE3;
+  --dark: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -197,28 +202,33 @@ a {
 #goats .overlay .card-container { 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 #goats .overlay .card-container .card { 
-  width: 45%;
+  width: 40%;
   border-radius:  5px;
   background-color: #335368;
-  opacity: .7;
+  /* opacity: .7; */
   padding: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+#goats .overlay .card-container .card:first-child{
+  margin-right: 2%;
+}
 
 #goats .overlay .card-container .card .player-image { 
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  border: 1px solid #ffd54d;
+  border: 3px solid #ffd54d;
   overflow: hidden;
   display: block;
+  background: #fff;
 }
 
 #goats .overlay .card-container .card .player-image .img-class { 
@@ -228,6 +238,7 @@ a {
 #goats .overlay .card-container .card .player-name { 
   font-size: 20px;
   color: #f7f7f7;
+  margin: 10px 0 5px 0;
 }
 
 #goats .overlay .card-container .card .country-box { 
@@ -236,8 +247,8 @@ a {
 }
 
 #goats .overlay .card-container .card .country-box .country-logo { 
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   margin-right: 10px;
   display: block;
@@ -249,19 +260,27 @@ a {
 }
 
 #goats .overlay .card-container .card .country-box .country { 
-
+  font-size: 16px;
+  color: #f7f7f7;
 }
 
 #goats .overlay .card-container .card .stats { 
-
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 #goats .overlay .card-container .card .stats li { 
-
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #goats .overlay .card-container .card .stats li .rating-title { 
-
+  font-size: 16px;
+  color: #f7f7f7;
+  margin-bottom: 25px;
 }
 
 /* css ends here */
