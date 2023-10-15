@@ -196,7 +196,7 @@ a {
   color: #f7f7f7;
   font-weight: 600;
   text-align: center;
-  margin-top: 4%;
+  margin-top: 10%;
 }
 
 #goats .overlay .card-container { 
@@ -207,7 +207,7 @@ a {
 }
 
 #goats .overlay .card-container .card { 
-  width: 40%;
+  width: 35%;
   border-radius:  5px;
   background-color: #335368;
   /* opacity: .7; */
@@ -253,6 +253,7 @@ a {
   margin-right: 10px;
   display: block;
   overflow: hidden;
+  border: 2px solid #ffd54d;
 }
 
 #goats .overlay .card-container .card .country-box .country-logo .img-class { 
@@ -281,6 +282,116 @@ a {
   font-size: 16px;
   color: #f7f7f7;
   margin-bottom: 25px;
+}
+
+#gallery { 
+
+}
+
+#gallery .main-title { 
+
+}
+
+#gallery .gallery-images { 
+  display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 5vw);
+    grid-gap: 15px;
+
+}
+
+#gallery .gallery-images .gallery-item { 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  border-radius: 7px;
+  overflow: hidden;
+  display: flex;
+}
+#gallery .gallery-images .one{
+  grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 8;
+   
+}
+#gallery .gallery-images .two{
+  grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 9;
+   
+}
+#gallery .gallery-images .three{
+  grid-column-start: 8;
+  grid-column-end: 12;
+  grid-row-start: 6;
+  grid-row-end: 13;
+   
+}
+#gallery .gallery-images .four{
+  grid-column-start: 8;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+#gallery .gallery-images .five{
+  grid-column-start: 12;
+    grid-column-end: 16;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+#gallery .gallery-images .six{
+  grid-column-start: 12;
+    grid-column-end: 16;
+    grid-row-start: 5;
+    grid-row-end: 11;  
+}
+#gallery .gallery-images .seven{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 11;
+}
+#gallery .gallery-images .eight{
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 9;
+  grid-row-end: 16;
+}
+#gallery .gallery-images .nine{
+  grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 11;
+    grid-row-end: 16;
+}
+#gallery .gallery-images .ten{
+  grid-column-start: 12;
+    grid-column-end: 16;
+    grid-row-start: 11;
+    grid-row-end: 16;
+}
+#gallery .gallery-images .eleven{
+  grid-column-start: 8;
+  grid-column-end: 12;
+  grid-row-start: 13;
+  grid-row-end: 17;
+}
+
+
+#gallery .gallery-images .gallery-item .image { 
+  
+}
+
+#gallery .gallery-images .gallery-item .image .galley-image { 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#gallery .gallery-images .gallery-item .info { 
+  position: absolute;
 }
 
 /* css ends here */
