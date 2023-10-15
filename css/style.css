@@ -1,6 +1,8 @@
 :root {
-  --light-cream: #F8EDE3;
-  --dark: #ffffff;
+  --light-yellow: #93B1A6;
+  --orange: #FFD700;
+  --dark-light : #183D3D;
+  --dark : #393053;
 }
 
 * {
@@ -104,7 +106,7 @@ a {
 
 #home .wrapper .main-title {
   font-size: 100px;
-  color: #f7f7f7;
+  color: #FFD700;
   font-weight: 600;
   text-align: center;
   margin-top: 15%;
@@ -112,7 +114,7 @@ a {
 
 #home .wrapper .title-author {
   font-size: 40px;
-  color: #f7f7f7;
+  color: #FFD700;
   font-weight: 500;
   text-align: right;
   font-style: italic;
@@ -139,7 +141,7 @@ a {
 
 #home nav ul li {
   font-size: 20px;
-  color: #f7f7f7;
+  color: #FFD700;
   font-weight: 400;
   margin-right: 20px;
   position: relative;
@@ -152,11 +154,11 @@ a {
   content: "";
   display: block;
   width: 5px;
-  height: 1px;
-  background-color: #f7f7f7;
+  height: 5px;
+  background-color: #FFD700;
   border-radius: 50px;
   position: absolute;
-  bottom: -5px;
+  bottom: -8px;
   left: 50%;
   right: 50%;
   transform: translate(-50%,-50%);
@@ -164,7 +166,8 @@ a {
 }
 #home nav ul li:hover::after {
   width: 100%;
-  background-color: #ffe79a;
+  height: 1px;
+  background-color: #FFD700;
 }
 
 #goats { 
@@ -182,7 +185,7 @@ a {
 
 #goats .overlay { 
   background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2763699229691877) 39%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.024269082633053274) 41%, rgba(24,61,61,1) 100%);
   height: 100vh;
   position: absolute;
   width: 100%;
@@ -193,7 +196,7 @@ a {
 
 #goats .overlay .main-title { 
   font-size: 50px;
-  color: #f7f7f7;
+  color: #FFD700;
   font-weight: 600;
   text-align: center;
   margin-top: 10%;
@@ -207,15 +210,16 @@ a {
 }
 
 #goats .overlay .card-container .card { 
-  width: 35%;
+  width: 25%;
   border-radius:  5px;
-  background-color: #335368;
+  background-color: var(--dark);
   /* opacity: .7; */
   padding: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border:1px solid #FFD700;
 }
 #goats .overlay .card-container .card:first-child{
   margin-right: 2%;
@@ -225,7 +229,7 @@ a {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  border: 3px solid #ffd54d;
+  border: 3px solid #FFD700;
   overflow: hidden;
   display: block;
   background: #fff;
@@ -237,8 +241,9 @@ a {
 
 #goats .overlay .card-container .card .player-name { 
   font-size: 20px;
-  color: #f7f7f7;
+  color: #FFD700;
   margin: 10px 0 5px 0;
+  font-weight: 900;
 }
 
 #goats .overlay .card-container .card .country-box { 
@@ -253,7 +258,7 @@ a {
   margin-right: 10px;
   display: block;
   overflow: hidden;
-  border: 2px solid #ffd54d;
+  border: #FFD700;
 }
 
 #goats .overlay .card-container .card .country-box .country-logo .img-class { 
@@ -262,7 +267,7 @@ a {
 
 #goats .overlay .card-container .card .country-box .country { 
   font-size: 16px;
-  color: #f7f7f7;
+  color: #FFD700;
 }
 
 #goats .overlay .card-container .card .stats { 
@@ -285,11 +290,16 @@ a {
 }
 
 #gallery { 
-
+  padding: 4% 15px;
+  background-color: var(--dark-light);
 }
 
 #gallery .main-title { 
-
+  font-size: 50px;
+  color: #FFD700;
+  font-weight: 600;
+  text-align: center;
+  margin: 5% 0 50px 0;
 }
 
 #gallery .gallery-images { 
@@ -308,7 +318,53 @@ a {
   border-radius: 7px;
   overflow: hidden;
   display: flex;
+  transition: all .3s ease-out;
 }
+
+#gallery .gallery-images .gallery-item .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #335368;
+  opacity: .2;
+  transition: all .2s ease-in-out;
+}
+
+#gallery .gallery-images .gallery-item .info { 
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  opacity: 0;
+}
+#gallery .gallery-images .gallery-item .info .name{
+  font-size: 20px;
+  font-weight: 600;
+  color: #f7f7f7;
+  font-family: sans-serif;
+  margin-bottom: 7px;
+}
+#gallery .gallery-images .gallery-item .info .para{
+  font-size: 15px;
+  font-weight: 300;
+  color: #f7f7f7;
+  font-family: sans-serif;
+}
+#gallery .gallery-images .gallery-item:hover{
+  transform: scale(1.030);
+  border: 2px solid #ffd54d;
+}
+#gallery .gallery-images .gallery-item:hover .overlay{
+  opacity: .8; 
+}
+#gallery .gallery-images .gallery-item:hover .info {
+  opacity: 1;
+}
+
+
+
+
 #gallery .gallery-images .one{
   grid-column-start: 1;
     grid-column-end: 4;
@@ -390,8 +446,9 @@ a {
   object-fit: cover;
 }
 
-#gallery .gallery-images .gallery-item .info { 
-  position: absolute;
-}
+
+
+
+
 
 /* css ends here */
