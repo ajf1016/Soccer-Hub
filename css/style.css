@@ -225,6 +225,11 @@ a {
   margin-top: 50px;
 }
 
+#goats .overlay .card-container .card-image{
+  width: 25%;
+  margin-right: 5%;
+}
+
 #goats .overlay .card-container .card { 
   width: 25%;
   border-radius:  5px;
